@@ -67,7 +67,7 @@ describe('fizzBuzzer', function () {
   // test bad inputs
   it('should raise error if args not numbers', function () {
     // range of bad inputs
-    const badInputs = ['hi', true, NaN, undefined]
+    const badInputs = ['hi', true, NaN, function () {}, [1, 2, 3]]
 
     // for each input, error should be thown
     badInputs.forEach(function (input) {
